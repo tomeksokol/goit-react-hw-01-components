@@ -1,5 +1,6 @@
 // import React from 'react'
 // import user from "./user.json";
+import propTypes from 'prop-types';
 
 const Profile = ({ avatar, tag, username, location, stats }) => {
   return (
@@ -29,5 +30,10 @@ const Profile = ({ avatar, tag, username, location, stats }) => {
     </div>
   );
 };
+
+Profile.propTypes = {
+
+  
+}
 
 export default Profile;
