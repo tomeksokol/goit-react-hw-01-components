@@ -1,12 +1,10 @@
 // import React from 'react'
 // import user from "./user.json";
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Profile = ({ avatar, tag, username, location, stats }) => {
   return (
     <div className="profile">
-      {" "}
-      <b>Task 1 - social media profile</b>
       <div className="description">
         <img src={avatar} alt="User avatar" className="avatar" />
         <p className="name">{username}</p>
@@ -32,8 +30,11 @@ const Profile = ({ avatar, tag, username, location, stats }) => {
 };
 
 Profile.propTypes = {
-
-  
-}
+  avatar: PropTypes.string,
+  tag: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  location: PropTypes.string,
+  stats: PropTypes.objectOf(PropTypes.number),
+};
 
 export default Profile;
