@@ -9,6 +9,8 @@ import data from "./components/task2_statistics/data.json";
 import FriendList from "./components/task3_friends/FriendList";
 import friends from "./components/task3_friends/friends.json";
 //Task-4
+import TransactionHistory from './components/task4_transactions/TransactionHistory';
+import transactions from './components/task4_transactions/transactions.json'
 
 const App = () => {
   const { username, tag, location, avatar, stats } = user;
@@ -48,6 +50,16 @@ const App = () => {
         </div>
 
         <FriendList friends={friends} />
+
+        <div>
+          <h1>Task 4 - Transactions</h1>
+          <a href="https://#" target="_blank" rel="noreferrer">
+            Link to GitHub
+          </a>
+        </div>
+
+        <TransactionHistory items={transactions}/>
+        
       </header>
     </div>
   );
