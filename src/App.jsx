@@ -1,52 +1,53 @@
-import logo from "./logo.svg";
 import "./App.css";
+//Task-1
 import Profile from "./components/task1_profile/Profile";
 import user from "./components/task1_profile/user.json";
-
+//Task-2
 import Statistics from "./components/task2_statistics/Statistics";
 import data from "./components/task2_statistics/data.json";
+//Task-3
+import FriendList from "./components/task3_friends/FriendList";
+import friends from "./components/task3_friends/friends.json";
+//Task-4
 
 const App = () => {
   const { username, tag, location, avatar, stats } = user;
   return (
     <div className="App">
-      <div>
-        <p>Task 1 - social media profile</p>
-        <a href="https://#" target="_blank" rel="noreferrer">
-          Link to GitHub
-        </a>
-      </div>
-
-      <Profile
-        username={username}
-        tag={tag}
-        location={location}
-        avatar={avatar}
-        stats={stats}
-      />
-
-      <div>
-        <p>Task 2 - statistics</p>
-        <a href="https://#" target="_blank" rel="noreferrer">
-          Link to GitHub
-        </a>
-      </div>
-      
-      <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
-
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
+        <div>
+          <h1>Task 1 - social media profile</h1>
+          <a href="https://#" target="_blank" rel="noreferrer">
+            Link to GitHub
+          </a>
+        </div>
+
+        <Profile
+          username={username}
+          tag={tag}
+          location={location}
+          avatar={avatar}
+          stats={stats}
+        />
+
+        <div>
+          <h1>Task 2 - statistics</h1>
+          <a href="https://#" target="_blank" rel="noreferrer">
+            Link to GitHub
+          </a>
+        </div>
+
+        <Statistics title="Upload stats" stats={data} />
+        <Statistics stats={data} />
+
+        <div>
+          <h1>Task 3 - Friends</h1>
+          <a href="https://#" target="_blank" rel="noreferrer">
+            Link to GitHub
+          </a>
+        </div>
+
+        <FriendList friends={friends} />
       </header>
     </div>
   );

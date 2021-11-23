@@ -4,14 +4,15 @@ import PropTypes from "prop-types";
 const Statistics = ({ stats, title }) => {
   return (
     <section className="statistics">
-      <h2 className="title">{title}</h2>
+      {/* rendering title only if avaiable */}
+      {title !== "" && <h2 className="title">{title}</h2>}
 
       <ul className="stat-list">
-        {stats.map((stat) => (
-          <li key={stat.id} className="item">
-            <span className="label">{stat.label}</span>
+        {stats.map(({ id, label, percentage }) => (
+          <li key={id} className="item">
+            <span className="label">{label}</span>
             <br></br>
-            <span className="percentage">{stat.percentage}</span>
+            <span className="percentage">{percentage}%</span>
           </li>
         ))}
       </ul>
