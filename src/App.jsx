@@ -9,8 +9,8 @@ import data from "./components/task2_statistics/data.json";
 import FriendList from "./components/task3_friends/FriendList";
 import friends from "./components/task3_friends/friends.json";
 //Task-4
-import TransactionHistory from './components/task4_transactions/TransactionHistory';
-import transactions from './components/task4_transactions/transactions.json';
+import TransactionHistory from "./components/task4_transactions/TransactionHistory";
+import transactions from "./components/task4_transactions/transactions.json";
 
 const App = () => {
   const { username, tag, location, avatar, stats } = user;
@@ -19,7 +19,10 @@ const App = () => {
       <header className="App-header">
         <div>
           <h1>Task 1 - social media profile</h1>
-          <a href="https://#" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/tomeksokol/goit-react-hw-01-components/tree/main/src/components/task1_profile"
+            target="_blank"
+            rel="noreferrer">
             Link to GitHub
           </a>
         </div>
@@ -36,7 +39,10 @@ const App = () => {
 
         <div>
           <h1 className="task-header">Task 2 - statistics</h1>
-          <a href="https://#" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/tomeksokol/goit-react-hw-01-components/tree/main/src/components/task2_statistics"
+            target="_blank"
+            rel="noreferrer">
             Link to GitHub
           </a>
         </div>
@@ -46,7 +52,10 @@ const App = () => {
 
         <div>
           <h1 className="task-header">Task 3 - Friends</h1>
-          <a href="https://#" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/tomeksokol/goit-react-hw-01-components/tree/main/src/components/task3_friends"
+            target="_blank"
+            rel="noreferrer">
             Link to GitHub
           </a>
         </div>
@@ -55,13 +64,15 @@ const App = () => {
 
         <div>
           <h1 className="task-header">Task 4 - Transactions</h1>
-          <a href="https://#" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/tomeksokol/goit-react-hw-01-components/tree/main/src/components/task4_transactions"
+            target="_blank"
+            rel="noreferrer">
             Link to GitHub
           </a>
         </div>
 
-        <TransactionHistory items={transactions}/>
-
+        <TransactionHistory items={transactions} />
       </header>
     </div>
   );
