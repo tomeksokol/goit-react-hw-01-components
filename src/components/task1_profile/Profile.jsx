@@ -1,28 +1,40 @@
 // import React from 'react'
-// import user from "./user.json";
-import PropTypes from 'prop-types';
+import {
+  profileClasses,
+  avatarClasses,
+  nameClasses,
+  tagClasses,
+  locationClasses,
+  statsClasses,
+  labelClasses,
+  quantityClasses,
+} from "./Profile.module.css";
+import PropTypes from "prop-types";
 
 const Profile = ({ avatar, tag, username, location, stats }) => {
   return (
-    <div className="profile">
+    <div className={profileClasses}>
       <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
+        <img className={avatarClasses} src={avatar} alt="User avatar" />
+        <p className={nameClasses}>{username}</p>
+        <p className={tagClasses}>{tag}</p>
+        <p className={locationClasses}>{location}</p>
       </div>
-      <ul className="stats">
+      <ul className={statsClasses}>
         <li>
-          <span className="label">{Object.keys(stats)[0]}</span>
-          <span className="quantity">{stats.followers}</span>
+          <span className={labelClasses}>{Object.keys(stats)[0]}</span>
+          <br></br>
+          <span className={quantityClasses}>{stats.followers}</span>
         </li>
         <li>
-          <span className="label">{Object.keys(stats)[1]}</span>
-          <span className="quantity">{stats.views}</span>
+          <span className={labelClasses}>{Object.keys(stats)[1]}</span>
+          <br></br>
+          <span className={quantityClasses}>{stats.views}</span>
         </li>
         <li>
-          <span className="label">{Object.keys(stats)[2]}</span>
-          <span className="quantity">{stats.likes}</span>
+          <span className={labelClasses}>{Object.keys(stats)[2]}</span>
+          <br></br>
+          <span className={quantityClasses}>{stats.likes}</span>
         </li>
       </ul>
     </div>

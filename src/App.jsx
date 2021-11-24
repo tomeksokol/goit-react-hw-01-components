@@ -31,6 +31,8 @@ const App = () => {
           avatar={avatar}
           stats={stats}
         />
+        {/* second way */}
+        {/* <Profile {...user} /> */}
 
         <div>
           <h1>Task 2 - statistics</h1>
