@@ -11,6 +11,10 @@ ul {
   padding: 0;
 }
 
+.task-header {
+  border-top: 2px solid black;
+  padding-top: 25px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -19,7 +23,7 @@ ul {
 }
 
 .App-header {
-  background-color: #a7a8a8;
+  background-color: silver;
   /* min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -35,7 +35,7 @@ const App = () => {
         {/* <Profile {...user} /> */}
 
         <div>
-          <h1>Task 2 - statistics</h1>
+          <h1 className="task-header">Task 2 - statistics</h1>
           <a href="https://#" target="_blank" rel="noreferrer">
             Link to GitHub
           </a>
@@ -45,7 +45,7 @@ const App = () => {
         <Statistics stats={data} />
 
         <div>
-          <h1>Task 3 - Friends</h1>
+          <h1 className="task-header">Task 3 - Friends</h1>
           <a href="https://#" target="_blank" rel="noreferrer">
             Link to GitHub
           </a>
@@ -54,7 +54,7 @@ const App = () => {
         <FriendList friends={friends} />
 
         <div>
-          <h1>Task 4 - Transactions</h1>
+          <h1 className="task-header">Task 4 - Transactions</h1>
           <a href="https://#" target="_blank" rel="noreferrer">
             Link to GitHub
           </a>

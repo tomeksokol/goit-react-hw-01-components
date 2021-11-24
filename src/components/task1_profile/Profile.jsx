@@ -6,8 +6,9 @@ import {
   tagClasses,
   locationClasses,
   statsClasses,
-  labelClasses,
+  labelClasses,  
   quantityClasses,
+  labelItemClasses,
 } from "./Profile.module.css";
 import PropTypes from "prop-types";
 
@@ -21,12 +22,12 @@ const Profile = ({ avatar, tag, username, location, stats }) => {
         <p className={locationClasses}>{location}</p>
       </div>
       <ul className={statsClasses}>
-        <li>
+      <li className={labelItemClasses}>
           <span className={labelClasses}>{Object.keys(stats)[0]}</span>
           <br></br>
           <span className={quantityClasses}>{stats.followers}</span>
         </li>
-        <li>
+        <li className={labelItemClasses}>
           <span className={labelClasses}>{Object.keys(stats)[1]}</span>
           <br></br>
           <span className={quantityClasses}>{stats.views}</span>
