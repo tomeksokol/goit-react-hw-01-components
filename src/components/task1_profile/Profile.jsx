@@ -32,7 +32,7 @@ const Profile = ({ avatar, tag, username, location, stats }) => {
           <br></br>
           <span className={quantityClasses}>{stats.views}</span>
         </li>
-        <li>
+        <li className={labelItemClasses}>
           <span className={labelClasses}>{Object.keys(stats)[2]}</span>
           <br></br>
           <span className={quantityClasses}>{stats.likes}</span>
